@@ -9,6 +9,14 @@ print_green() {
 	echo -e "\e[32m$1\e[0m"
 }
 
+ctrl_c(){
+  echo -e "\n\n[!] Saliendo...\n"
+  exit 1
+}
+
+# Ctrl+C
+trap ctrl_c INT
+
 ./reset.sh
 
 figlet -f slant suprimoware
