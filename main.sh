@@ -137,11 +137,6 @@ cero -c 5 $domain > $ruta_resultados/raw/cero
 
 cat $ruta_resultados/raw/cero >> $ruta_resultados/clean/subdominios
 
-# Implementacion de 
-
-
-
-
 
 
 # ORDENAR ARCHIVOS CLEAN
