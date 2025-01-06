@@ -17,7 +17,7 @@ ctrl_c(){
 # Ctrl+C
 trap ctrl_c INT
 
-./reset.sh
+#./reset.sh
 
 figlet -f slant suprimoware
 if [ -z "$1" ]; then
