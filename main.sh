@@ -56,7 +56,7 @@ whois $domain > $ruta_resultados/raw/whois
 echo "Realizando dig"
 dig $domain > $ruta_resultados/raw/dig
 
-curl -I "https://$domain" > $ruta_resultados/raw/headers
+curl -I --connect-timeout 5 --max-time 15 "https://$domain" > $ruta_resultados/raw/headers
 cat $ruta_resultados/raw/headers | grep Server | awk '{print $2}' > $ruta_resultados/clean/headers_server
 
 
