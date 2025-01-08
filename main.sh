@@ -127,7 +127,7 @@ gau $domain --threads 1 --o $ruta_resultados/raw/gau
 
 cat $ruta_resultados/raw/gau | unfurl paths | sort -u >> $ruta_resultados/clean/PATHS
 
-cat $ruta_resultados/raw/gau | unfurl key |sort -u >> $ruta_resultados/clean/KEYS
+cat $ruta_resultados/raw/gau | unfurl keys |sort -u >> $ruta_resultados/clean/KEYS
 
 cat $ruta_resultados/raw/gau | unfurl keypairs | sed "s|timestamp.*|""|" | sort -u >>   $ruta_resultados/clean/KEYS
 
